@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <form action="" id="form">
+      <div class="div">
+        <h2>User Settings</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+      <div id="personal">
+        <label for="">Personal Info</label>
+        <div id="inputs">
+          <div style="width: max-content">
+            <input
+              class="font"
+              type="text"
+              placeholder="first Name"
+              name="firstName"
+              id="firstName"
+              required
+              aria-required="true"
+            />
+            <input
+              class="font"
+              type="text"
+              placeholder="last Name"
+              name="lastName"
+              id="lastName"
+              required
+              aria-required="true"
+            />
+          </div>
+          <select required aria-required="true" id="country" class="font">
+            <option class="font" value="" disabled selected hidden>
+              Country
+            </option>
+            <option class="font" value="nigeria">nigeria</option>
+            <option class="font" value="canada">Canada</option>
+            <option class="font" value="Korea">Korea</option>
+          </select>
+        </div>
+      </div>
+      <div id="notification">
+        <label for="">Notifications</label>
+        <div>
+          <div class="notif-child">
+            <p>Weelky Report</p>
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input id="week" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="notif-child">
+            <p>Pull Requests</p>
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input id="pullRequest" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="notif-child">
+            <p>Deployment Triggers</p>
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input id="deployment" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div id="security">
+        <label for="">Security</label>
+        <div>
+          <div id="check">
+            <p>Run security check upon login</p>
+            <input id="secure" type="checkbox" />
+          </div>
+          <div id="slider">
+            <p>less</p>
+            <input id="range" style="width: 100%" type="range" />
+            <p>more</p>
+          </div>
+        </div>
+      </div>
+      <div id="buttons">
+        <button type="submit" id="save">Save</button>
+        <button type="reset" id="cancel">Cancel</button>
+      </div>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
