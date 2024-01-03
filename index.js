@@ -13,6 +13,7 @@ form.addEventListener("submit", function (e) {
   const secure = document.getElementById("secure");
   const range = document.getElementById("range");
   if (firstName.value !== "" && lastName.value !== "" && country.value !== "") {
+    console.log(form.elements)
     console.log("First Name:", firstName.value);
     console.log("Last Name:", lastName.value);
     console.log("Country:", country.value);
